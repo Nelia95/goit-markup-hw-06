@@ -421,9 +421,7 @@
           </address>
         </div>
         <div class="form">
-          <h1></h1>
-          <h2></h2>
-          <h3 class="form-title">Присоединяйтесь</h3>
+          <p class="form-title">Присоединяйтесь</p>
           <ul class="form-list list">
             <li class="form-item">
               <a href="" class="form-link"
@@ -455,9 +453,21 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe">
+          <p class="subscribe-title">Подпишитесь на рассылку</p>
+          <div class="subscribe-container">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="user-email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-button">Подписаться</button>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
@@ -489,6 +499,7 @@
             class="modal-text"
             placeholder="Введите текст"
           ></textarea>
+          <button class="form-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
