@@ -482,6 +482,12 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
           <label for="user-name" class="modal-label">Имя</label>
+          <span class="icon"
+            ><svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </span>
+
           <input
             type="text"
             id="user-name"
@@ -489,8 +495,18 @@
             class="modal-input"
           />
           <label for="user-tel" class="modal-label">Телефон</label>
+          <span class="icon"
+            ><svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </span>
           <input type="tel" id="user-tel" name="user-tel" class="modal-input" />
           <label for="user-email" class="modal-label">Почта</label>
+          <span class="icon"
+            ><svg class="modal-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </span>
           <input
             type="email"
             id="user-email"
@@ -504,6 +520,12 @@
             class="modal-text"
             placeholder="Введите текст"
           ></textarea>
+          <label class="checkbox-label">
+            <input type="checkbox" class="checkbox" name="checkbox" />Соглашаюсь
+            с рассылкой и принимаю
+            <span class="checkbox-icon"></span>
+            <a href="" class="checkbox-link"> Условия договора</a>
+          </label>
           <button class="form-button" type="submit">Отправить</button>
         </form>
       </div>
