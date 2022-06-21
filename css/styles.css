@@ -605,6 +605,9 @@ nav {
 .footer-container {
   margin-right: 70px;
 }
+.form {
+  margin-right: 93px;
+}
 .form-list {
   display: flex;
   justify-content: center;
@@ -636,7 +639,6 @@ nav {
   background-color: #2196f3;
 }
 .subscribe {
-  margin-left: 93px;
 }
 .subscribe-container {
   display: flex;
@@ -709,9 +711,8 @@ nav {
   height: 100%;
 }
 .backdrop.is-hidden {
-  opacity: 0;
+  transition: opacity(0) visibility(hidden);
   pointer-events: none;
-  visibility: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(0);
@@ -777,6 +778,7 @@ nav {
 }
 .input-container {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .modal-input {
@@ -784,7 +786,6 @@ nav {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
 }
 .modal-input:focus {
@@ -798,7 +799,7 @@ nav {
   position: absolute;
   left: 12px;
   top: 50%;
-  transform: translateY(-75%);
+  transform: translateY(-50%);
 }
 /* .modal-icon {
   width: 18px;
